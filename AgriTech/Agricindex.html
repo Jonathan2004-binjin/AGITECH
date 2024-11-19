@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTech Solutions - Precision Agriculture, Simplified</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to right, #234B56 0%, rgba(35, 75, 86, 0.8) 100%);
+        }
+
+        .custom-button {
+            background-color: #C41E3A;
+            transition: all 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background-color: #A01830;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <nav class="bg-white fixed w-full z-50 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center">
+                        <span class="text-2xl font-bold text-green-600">AgriTech</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home"
+                        class="text-gray-700 hover:text-green-600 font-medium transition duration-300">Home</a>
+                    <a href="#features"
+                        class="text-gray-700 hover:text-green-600 font-medium transition duration-300">Features</a>
+                    <a href="#testimonials"
+                        class="text-gray-700 hover:text-green-600 font-medium transition duration-300">Testimonials</a>
+                    <a href="#contact"
+                        class="text-gray-700 hover:text-green-600 font-medium transition duration-300">Contact</a>
+                    <div class="flex items-center space-x-4">
+                        <a href="#login"
+                            class="text-green-600 font-semibold hover:text-green-700 transition duration-300">
+                            Login
+                        </a>
+                        <a href="#signup"
+                            class="bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition duration-300">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-green-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path class="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-6">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home"
+                        class="text-gray-700 hover:text-green-600 font-medium transition duration-300">Home</a>
+                    <a href="#features"
+                        class="text-gray-700 hover:text-green-600 font-medium transition duration-300">Features</a>
+                    <a href="#testimonials"
+                        class="text-gray-700 hover:text-green-600 font-medium transition duration-300">Testimonials</a>
+                    <a href="#contact"
+                        class="text-gray-700 hover:text-green-600 font-medium transition duration-300">Contact</a>
+                    <div class="flex flex-col space-y-4 pt-4 border-t border-gray-200">
+                        <a href="#login"
+                            class="text-green-600 font-semibold hover:text-green-700 transition duration-300">
+                            Login
+                        </a>
+                        <a href="#signup"
+                            class="bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition duration-300 text-center">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="h-20"></div>
+    <main class="flex-grow">
+        <!-- Updated Hero Section -->
+        <section class="hero-gradient text-white">
+            <div class="container mx-auto px-4 py-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                            Revolutionize Your <span class="text-[#E2C87D]">Agricultural</span> Future
+                        </h1>
+                        <p class="text-xl md:text-2xl mb-8 leading-relaxed text-gray-200">
+                            Harness the power of precision agriculture with data-driven insights and smart automation
+                        </p>
+                        <div class="flex gap-4">
+                            <button
+                                class="custom-button px-8 py-4 rounded-lg font-bold text-lg shadow-lg transform hover:scale-105 transition duration-300">
+                                Start Free Trial
+                            </button>
+                            <button
+                                class="border-2 border-[#E2C87D] text-[#E2C87D] hover:bg-[#E2C87D] hover:text-[#234B56] px-8 py-4 rounded-lg font-bold text-lg transition duration-300">
+                                Watch Demo
+                            </button>
+                        </div>
+                        <div class="mt-8 flex items-center space-x-2 text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#E2C87D]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Trusted by 10,000+ Farmers Worldwide</span>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2 relative">
+                        <img src="file:///Users/binjin/Downloads/pexels-tomfisk-1595104%20(1).jpg"
+                            alt="Aerial view of modern farming"
+                            class="rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
+                            <p class="text-[#234B56] font-bold">Precision Farming Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updated Features Section -->
+        <section id="features" class="py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Smart Farming Solutions</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Leverage cutting-edge technology to maximize your farm's potential
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-600 mb-4" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Soil Health Monitoring</h3>
+                        <p>Real-time soil analysis for optimal nutrient management.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600 mb-4" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Smart Irrigation Systems</h3>
+                        <p>Efficient water usage with automated irrigation scheduling.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-yellow-600 mb-4" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Crop Disease Detection</h3>
+                        <p>Early detection and prevention of crop diseases.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-purple-600 mb-4" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">Market Intelligence</h3>
+                        <p>Access to real-time market trends and pricing information.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updated Testimonials Section -->
+        <section id="testimonials" class="bg-green-50 py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-16">Success Stories</h2>
+
+                <!-- Swiper container -->
+                <div class="swiper testimonialSwiper max-w-6xl mx-auto">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white p-8 rounded-xl shadow-lg h-full">
+                                <div class="flex items-center mb-6">
+                                    <img src="farmer1.jpg" alt="Farmer"
+                                        class="w-16 h-16 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h4 class="font-bold">John Smith</h4>
+                                        <p class="text-gray-600">Wheat Farmer, Kansas</p>
+                                    </div>
+                                </div>
+                                <blockquote class="text-lg leading-relaxed text-gray-700">
+                                    "Since implementing AgriTech Solutions, our crop yield has increased by 40% while
+                                    reducing water usage. The smart irrigation system has been a game-changer for our
+                                    farm."
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white p-8 rounded-xl shadow-lg h-full">
+                                <div class="flex items-center mb-6">
+                                    <img src="farmer2.jpg" alt="Farmer"
+                                        class="w-16 h-16 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h4 class="font-bold">Sarah Johnson</h4>
+                                        <p class="text-gray-600">Organic Farm Owner, California</p>
+                                    </div>
+                                </div>
+                                <blockquote class="text-lg leading-relaxed text-gray-700">
+                                    "The soil health monitoring feature has revolutionized how we manage our organic
+                                    crops. We've seen improved soil quality and better harvest results year after year."
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white p-8 rounded-xl shadow-lg h-full">
+                                <div class="flex items-center mb-6">
+                                    <img src="farmer3.jpg" alt="Farmer"
+                                        class="w-16 h-16 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h4 class="font-bold">Michael Chen</h4>
+                                        <p class="text-gray-600">Rice Farmer, Texas</p>
+                                    </div>
+                                </div>
+                                <blockquote class="text-lg leading-relaxed text-gray-700">
+                                    "The crop disease detection saved our harvest last season. Early warning allowed us
+                                    to take preventive measures before it was too late. Excellent support team too!"
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white p-8 rounded-xl shadow-lg h-full">
+                                <div class="flex items-center mb-6">
+                                    <img src="farmer4.jpg" alt="Farmer"
+                                        class="w-16 h-16 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h4 class="font-bold">Emma Rodriguez</h4>
+                                        <p class="text-gray-600">Vineyard Owner, Oregon</p>
+                                    </div>
+                                </div>
+                                <blockquote class="text-lg leading-relaxed text-gray-700">
+                                    "The market intelligence feature helps us time our harvests perfectly. We've
+                                    increased our profit margins by 25% using AgriTech's price prediction tools."
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white p-8 rounded-xl shadow-lg h-full">
+                                <div class="flex items-center mb-6">
+                                    <img src="farmer5.jpg" alt="Farmer"
+                                        class="w-16 h-16 rounded-full mr-4 object-cover">
+                                    <div>
+                                        <h4 class="font-bold">David Thompson</h4>
+                                        <p class="text-gray-600">Dairy Farmer, Wisconsin</p>
+                                    </div>
+                                </div>
+                                <blockquote class="text-lg leading-relaxed text-gray-700">
+                                    "AgriTech's integrated system has transformed our dairy farm operations. The
+                                    automated monitoring and data analytics have helped us optimize feed management and
+                                    improve milk production."
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation arrows -->
+                    <div class="swiper-button-next text-[#234B56]"></div>
+                    <div class="swiper-button-prev text-[#234B56]"></div>
+
+                    <!-- Pagination dots -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-green-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p>Email: info@agritechsolutions.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Farm Road, Agriville, AG 12345</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-green-300">Facebook</a>
+                        <a href="#" class="hover:text-green-300">Twitter</a>
+                        <a href="#" class="hover:text-green-300">LinkedIn</a>
+                        <a href="#" class="hover:text-green-300">Instagram</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4">Stay updated with our latest agricultural insights.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Enter your email"
+                            class="flex-grow px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-gray-900">
+                        <button type="submit"
+                            class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-r-lg">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-green-700 text-center">
+                <p>&copy; 2023 AgriTech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuButton.querySelector('svg path');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+
+        const swiper = new Swiper('.testimonialSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
